@@ -1,11 +1,12 @@
 @import url(https://fonts.bunny.net/css?family=orbitron:900);
+@import url(https://fonts.bunny.net/css?family=roboto:400,500,700);
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .main {
-    max-width: 1440px;
+    max-width: 1340px;
     height: 100vh;
     margin: auto;
     padding: 0;
@@ -25,7 +26,7 @@ body {
 
 .side {
     position: relative;
-    max-width: 540px;
+    max-width: 500px;
     flex: 1 0 40%;
     background-image: url("background.jpg");
     background-size:cover;
@@ -64,4 +65,35 @@ body {
 .content {
     flex-shrink: 1;
     background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.header {
+    max-width: 760px;
+    flex: 0 1 36%;
+    font-size: 23px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 40px 40px;
+    padding-bottom: 60px;
+}
+
+.header p {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.form {
+    flex: 1 1 auto;
+    
+}
+
+.form form {
+    background-color: #fff;
+    padding: 20px 10px;
 }
