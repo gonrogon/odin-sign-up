@@ -1,10 +1,17 @@
+@import url(https://fonts.bunny.net/css?family=orbitron:900);
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    font-family: sans-serif;
 }
 
 body {
     margin:  0;
     padding: 0;
+    background-color: #222;
 }
 
 .main {
@@ -13,12 +20,48 @@ body {
     margin: auto;
     padding: 0;
     display: flex;
+    flex-direction: row;
 }
 
 .side {
-    flex-basis: 33%;
+    position: relative;
+    max-width: 540px;
+    flex: 1 0 40%;
+    background-image: url("background.jpg");
+    background-size:cover;
+}
+
+.logo {
+    margin-top: 30%;
+    padding: 40px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.credit a {
+    color: #fff;
+}
+
+.credit a:hover {
+    color: #444;
 }
 
 .content {
-    flex: 1 1 auto;
+    flex-shrink: 1;
+    background-color: #f9fafb;
 }
