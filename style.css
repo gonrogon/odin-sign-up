@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:  0;
+    padding: 0;
+}
+
+.main {
+    max-width: 1440px;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    display: flex;
+}
+
+.side {
+    flex-basis: 33%;
+}
+
+.content {
+    flex: 1 1 auto;
+}
